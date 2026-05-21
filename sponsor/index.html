@@ -1,0 +1,152 @@
+напиши код для этой страницы срикролом
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 120px 60px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #1e1e1e, #333);
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            color: #aaa;
+        }
+
+        .content {
+            background: #181818;
+        }
+
+        .content h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            max-width: 700px;
+            line-height: 1.7;
+            color: #ccc;
+        }
+
+        .card {
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 20px;
+            background: #222;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: #2b2b2b;
+        }
+
+        footer {
+            padding: 40px;
+            text-align: center;
+            color: #777;
+            background: #0d0d0d;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#sponsors">Sponsors</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Sponsor Page</h1>
+            <p>Smooth scrolling landing page</p>
+        </div>
+    </section>
+
+    <section class="content" id="about">
+        <h2>About</h2>
+
+        <p>
+            This is an example section with smooth scrolling.
+            You can add any content here.
+        </p>
+
+        <div class="card">
+            <h3>Premium Sponsor</h3>
+            <p>
+                Information about your sponsor or project.
+            </p>
+        </div>
+    </section>
+
+    <section class="content" id="sponsors">
+        <h2>Sponsors</h2>
+
+        <div class="card">
+            <h3>Company One</h3>
+            <p>Short sponsor description.</p>
+        </div>
+
+        <div class="card">
+            <h3>Company Two</h3>
+            <p>Another sponsor description.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Your Website
+    </footer>
+
+</body>
+</html>
